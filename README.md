@@ -109,7 +109,7 @@ Ingenieria-II/
 
 **[Juan Pablo Agüero]**  
 Tecnicatura Superior en Desarrollo de Software · 2do Año  
-📧 tuemail@ejemplo.com · [GitHub](https://github.com/jpinformaticaok)
+📧 desarrollojp@gmail.com · [GitHub](https://github.com/tu-usuario)
 
 ---
 
