@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap para mantener un estilo consistente con el resto del sitio -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Etiquetas inline</title>
 </head>
-<body class="p-4">
+<body class="container py-4">
+    <!-- Título de la página de ejemplos inline -->
     <h1 class="alert alert-success">Ejemplos de etiquetas inline</h1>
+    <!-- Párrafo con distintas etiquetas inline de formato semántico -->
     <p>
-        <span>Esto es un texto con</span>
-        <strong> negrita</strong>,
-        <em> cursiva</em>,
-        <u> subrayado</u>,
-        <mark> resaltado</mark>,
-        <small> texto pequeño</small>,
-        <code> código</code>,
-        <sup> superíndice</sup>
+        <span>Esto es un texto con</span> <!-- span: contenedor inline neutro -->
+        <strong> negrita</strong>, <!-- strong: importancia fuerte -->
+        <em> cursiva</em>, <!-- em: énfasis -->
+        <u> subrayado</u>, <!-- u: subrayado visual -->
+        <mark> resaltado</mark>, <!-- mark: texto destacado -->
+        <small> texto pequeño</small>, <!-- small: texto de menor importancia -->
+        <code> código</code>, <!-- code: texto de código inline -->
+        <sup> superíndice</sup> <!-- sup: texto por encima de la línea -->
         y
-        <sub> subíndice</sub>.
+        <sub> subíndice</sub>. <!-- sub: texto por debajo de la línea -->
     </p>
+    <!-- Enlace externo y abreviatura con significado -->
     <p>
         También hay un
-        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/span" target="_blank" rel="noopener noreferrer">enlace externo</a>
+        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/span" target="_blank" rel="noopener noreferrer">enlace externo</a> <!-- a: hipervínculo -->
         y una
-        <abbr title="HyperText Markup Language">abreviatura</abbr>.
+        <abbr title="HyperText Markup Language">abreviatura</abbr>. <!-- abbr: abreviatura con tooltip -->
     </p>
+    <!-- Navegación de regreso -->
     <p><a href="index.html">Volver al inicio</a></p>
 </body>
 </html>

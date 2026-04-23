@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap para maquetación y estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Etiquetas block</title>
+</head>
+<body class="container py-4">
+    <!-- Encabezado semántico principal -->
+    <header class="mb-4">
+        <h1 class="alert alert-primary">Ejemplos de etiquetas block</h1>
+        <!-- Menú mínimo de navegación -->
+        <nav>
+            <a href="index.html">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección de encabezados y párrafos -->
+        <section class="mb-4">
+            <h2>Encabezados y párrafos</h2>
+            <p>Este bloque muestra varias etiquetas estructurales que se usan para organizar contenido.</p>
+            <p>Las etiquetas de bloque ocupan todo el ancho disponible y ayudan a crear secciones claras.</p>
+            <!-- Separador temático -->
+            <hr>
+            <h3>Subsección de ejemplo</h3>
+            <p>Otro párrafo de contenido dentro de la misma sección.</p>
+        </section>
+
+        <!-- Sección con distintos tipos de listas -->
+        <section class="mb-4">
+            <h2>Listas</h2>
+            <h3>Lista no ordenada</h3>
+            <!-- ul: lista sin prioridad de orden -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Lista ordenada</h3>
+            <!-- ol: lista con orden secuencial -->
+            <ol>
+                <li>Planificar estructura</li>
+                <li>Escribir contenido</li>
+                <li>Revisar resultado</li>
+            </ol>
+            <h3>Lista de definición</h3>
+            <!-- dl: término y descripción -->
+            <dl>
+                <dt>Etiqueta block</dt>
+                <dd>Elemento que inicia en una nueva línea y ocupa el ancho disponible.</dd>
+                <dt>Semántica</dt>
+                <dd>Uso correcto de etiquetas según el significado del contenido.</dd>
+            </dl>
+        </section>
+
+        <!-- Contenedores block para contenido editorial -->
+        <section class="mb-4">
+            <h2>Artículo, cita y contenido preformateado</h2>
+            <!-- article: contenido autónomo -->
+            <article class="border rounded p-3 mb-3">
+                <h3>Artículo de ejemplo</h3>
+                <p>Este artículo podría representar una noticia o publicación independiente.</p>
+            </article>
+            <!-- blockquote: cita extensa -->
+            <blockquote class="blockquote">
+                <p>"Aprender etiquetas block facilita construir páginas más ordenadas y accesibles."</p>
+            </blockquote>
+            <!-- pre: conserva espacios y saltos de línea -->
+            <pre class="bg-light border rounded p-3">Línea 1: Contenido preformateado
+Línea 2: Se respeta el espacio y salto de línea
+Línea 3: Útil para mostrar texto técnico</pre>
+        </section>
+
+        <!-- Tabla con estructura completa -->
+        <section class="mb-4">
+            <h2>Tabla completa</h2>
+            <table class="table table-bordered">
+                <!-- caption: título descriptivo de la tabla -->
+                <caption>Tabla de tecnologías y nivel</caption>
+                <!-- thead: cabecera -->
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Horas de práctica</th>
+                    </tr>
+                </thead>
+                <!-- tbody: datos principales -->
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermedio</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Inicial</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Inicial</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+                <!-- tfoot: resumen o totales -->
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total de horas</td>
+                        <td>85</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Bloque con imagen semántica y datos de autor -->
+        <section class="mb-4">
+            <h2>Figure, aside y address</h2>
+            <!-- figure + figcaption: recurso visual con descripción -->
+            <figure class="border rounded p-3">
+                <img src="img/imagen.jpg" class="img-fluid" alt="Imagen de ejemplo">
+                <figcaption>Figura con una imagen y su descripción.</figcaption>
+            </figure>
+            <!-- aside: contenido complementario -->
+            <aside class="alert alert-warning mt-3">
+                Este es un contenido complementario mostrado con la etiqueta <strong>aside</strong>.
+            </aside>
+            <!-- address: información de contacto/autoría -->
+            <address>
+                Creado por Juanpy<br>
+                Proyecto Ingeniería 2<br>
+                Contacto: juanpy@example.com
+            </address>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="mt-4 pt-3 border-top">
+        <p>Fin de la página de etiquetas block.</p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>

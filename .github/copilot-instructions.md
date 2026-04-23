@@ -28,3 +28,6 @@ There is no configured automated test suite, so there is no "single test" comman
 ## Recomendaciones
 - Cada vez que ingreses un nuevo código, inserta un comentario en español que explique las etiquetas utilizadas
 - los ejemplos y el contenido en general necesito que esten en español
+
+## Comentarios
+- quiero que el este mas y mejor comentado, con explicaciones de cada etiqueta y su función, para que sea mas fácil de entender para los estudiantes
