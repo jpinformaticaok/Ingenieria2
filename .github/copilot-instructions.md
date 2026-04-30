@@ -30,4 +30,4 @@ There is no configured automated test suite, so there is no "single test" comman
 - los ejemplos y el contenido en general necesito que esten en español
 
 ## Comentarios
-- quiero que el este mas y mejor comentado, con explicaciones de cada etiqueta y su función, para que sea mas fácil de entender para los estudiantes
+- quiero que este mas y mejor comentado, con explicaciones de cada etiqueta y su función, para que sea mas fácil de entender para los estudiantes
