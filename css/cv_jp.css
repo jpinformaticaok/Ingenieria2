@@ -73,6 +73,10 @@ li {
 }
 
   /* === ELEMENTOS INLINE === */
+.subtitulos {
+    color: white;
+}
+
 .cargo {
     font-weight: bold;
     color: #2c3e50;
