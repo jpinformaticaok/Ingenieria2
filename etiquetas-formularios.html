@@ -13,16 +13,16 @@
     <p>Esta página reúne distintas etiquetas y tipos de campos de formulario.</p>
 
     <!-- Formulario principal: action # evita envío real y method post simula envío de datos -->
-    <form action="#" method="post" class="border rounded p-3 mb-4">
+    <form action="https://google.com/search" method="get" class="border rounded p-3 mb-4">
         <!-- Primer grupo de campos: datos básicos del usuario -->
         <fieldset class="mb-3">
             <legend>Datos personales</legend>
 
             <div class="mb-3">
                 <!-- label vinculado al input por id/for -->
-                <label for="nombre" class="form-label">Nombre completo</label>
+                <label for="q" class="form-label">Buscar algo en google</label>
                 <!-- input text: campo de texto libre -->
-                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Escribe tu nombre" required>
+                <input type="text" id="q" name="q" class="form-control" placeholder="Escribí tu busqueda" required>
             </div>
 
             <div class="mb-3">
