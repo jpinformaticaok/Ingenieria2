@@ -121,5 +121,5 @@ Todos los trabajos son de elaboración propia salvo indicación contraria.
 ---
 
 <p align="center">
-  Hecho con ❤️ durante la cursada 2025
+  Hecho con ❤️ durante la cursada 2026
 </p>
