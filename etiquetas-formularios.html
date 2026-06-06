@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap para estilos de formularios -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/Styles.css"> <!--Enlace con los estilos en css-->
+    <link rel="stylesheet" href="css/styles.css"> <!--Enlace con los estilos en css-->
     <title>Etiquetas de formularios</title>
+
+    <script>
+        // Ejemplo de JavaScript para mostrar un mensaje al enviar el formulario
+        function mostrarMensaje() {
+            alert("Probamos un poco de javascript!");
+        }
+        function pedirNombreYSaludar() {
+            var nombre = prompt("¿Ingrese su nombre por favor:");
+            alert("¡Hola, " + nombre + "! Bienvenido/a.");
+        }
+        function cambiarTitulo() {
+            let texto_titulo = prompt("¿Ingrese titulo por favor:");
+            const titulo = document.querySelector("h1");
+            titulo.textContent = texto_titulo;
+            titulo.classList.add("alert-success") 
+        }
+    </script>
 </head>
 <body class="container py-4">
     <!-- Título y descripción de la práctica de formularios -->
-    <h1 class="alert alert-info">Ejemplos de etiquetas de formularios</h1>
+    <h1 class="alert " ondblclick="cambiarTitulo();">Ejemplos de etiquetas de formularios</h1>
     <p>Esta página reúne distintas etiquetas y tipos de campos de formulario.</p>
 
     <!-- Formulario principal: action # evita envío real y method post simula envío de datos -->
@@ -41,7 +58,7 @@
             <div class="mb-3">
                 <label for="edad" class="form-label">Edad</label>
                 <!-- input number: permite solo números dentro de un rango -->
-                <input type="number" id="edad" name="edad" class="form-control" min="0" max="120">
+                <input type="number" id="edad" name="edad" class="form-control" min="0" max="120" onmouseover="mostrarMensaje();">
             </div>
 
             <div class="mb-3">
@@ -88,7 +105,7 @@
             <div class="mb-3">
                 <label for="pais" class="form-label">País</label>
                 <!-- select + option: lista desplegable -->
-                <select id="pais" name="pais" class="form-select">
+                <select id="pais" name="pais" class="form-select" onchange="pedirNombreYSaludar();">
                     <option value="">Selecciona una opción</option>
                     <option value="ar">Argentina</option>
                     <option value="uy">Uruguay</option>
@@ -124,6 +141,36 @@
         </div>
     </form>
 
+    <h4>Texto de prueba CSS por etiqueta h4</h4>
+    
+    <p class="porclase">Texto de prueba CSS por clase</p>
+
+    <p id="porid">Texto de prueba CSS por id</p>
+
+    <div>
+        <p>Texto de prueba CSS selector descendiente</p>
+    </div>
+
+    <section>
+        <p>Texto de prueba CSS selector hijo directo</p>
+        <div>
+            <p>Texto de prueba CSS selector hijo directo (no afectado)</p>
+        </div>
+    </section>
+    <hr>
+    <h5>Texto de prueba CSS por etiqueta h5 Selector de grupo</h5>
+    <h6>Texto de prueba CSS por etiqueta h6 Selector de grupo</h6>
+    <hr>
+    <p class="resaltar">Este párrafo será rojo (clase "resaltar")</p>
+    <h2 class="resaltar">Este título no será afectado (aunque tiene la clase "resaltar")</h2>
+    <hr>
+    <input type="text" placeholder="Ingreso de contraseña para probar el selector de atributo">
+    <input type="password">
+    <hr>
+    <button class="especial">Boton de prueba</button>
+    <hr>
+    <p class="pseudoelementos">Ultimo texto de prueba!</p>
+    
     <!-- Enlace de regreso al index -->
     <p><a href="index.html">Volver al inicio</a></p>
 </body>

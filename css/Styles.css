@@ -5,3 +5,104 @@ div {
     padding: 15px; /* Espacio interno */
     margin-bottom: 20px; /* Espacio entre formularios */
 }
+
+label {
+    font-style: italic;
+    color: white;
+    background-color: black;
+}
+
+fieldset {
+    background-color: greenyellow;
+}
+
+.titulo {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#email {
+    background-color: lightyellow;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Aplicando los diferentes estilos segun los tipos de selectores. */
+/* por etiqueta */
+h4 {
+    background-color: lightblue;
+    padding: 8px;
+    border-radius: 4px;
+    color: darkgreen;
+}
+
+/* por clase */
+.porclase {
+    background-color: lightpink;
+    padding: 10px;
+    border-radius: 5px;
+    color: darkred;
+}
+
+/* por id */
+#porid {
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+/* selector universal */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* selector de hijo directo */
+div p {
+  color:purple;
+}
+
+/* selector de descendiente */
+section > p {
+  color:salmon;
+}
+
+/* selector de grupo */
+h5, h6 {
+  color:teal;
+}
+
+/* selector combinado */
+p.resaltar {
+  color:crimson;
+  font-size: xx-large;
+}
+
+/* selector de atributo */
+input[type="text"] {
+  border:2px solid red;
+}
+
+/* selector de pseudo-clase */
+.especial:hover {
+  background-color:black;
+  color:white;
+}
+
+/* selector de pseudo-elemento */
+.pseudoelementos::first-letter {
+  font-size:32px;
+  color:red;
+}
+
+/* CAJAS */
+body {
+    /* background: linear-gradient(to right, #07519b, #ec9d9d); */
+    background-image: url(../img/patron.jpg);
+    padding: 30px 10px 50px;
+    border: 2px solid #000;
+}

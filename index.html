@@ -7,11 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Bootstrap JS para componentes interactivos -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Styles.css"> <!-- Enlace con los estilos personalizados en CSS -->
+    <script src="js/codigo.js" defer></script> <!-- Enlace con el archivo de JavaScript para funcionalidades adicionales -->
     <title>Pagina web de Juan Pablo Aguero</title> <!-- Titulo de la pagina -->
+
 </head>
 <body class="container py-4">
     <!-- Título principal -->
-    <h1 class="alert alert-info">Mi primer pagina web!</h1> <!-- Encabezado principal de la pagina -->
+    <h1 style="background-color: lightskyblue; padding: 10px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.4);" onclick="alert('¡Ha hecho click en el H1!')">Mi primer pagina web!</h1> <!-- Encabezado principal de la pagina -->
     <!-- Línea separadora visual -->
     <hr/>
     <!-- Párrafo introductorio con un span estilizado -->
@@ -36,7 +39,7 @@
         <!-- Título de la tabla -->
         <h2 class="mb-3">Páginas de la comisión</h2>
         <!-- Tabla con estilo oscuro (table-dark) y filas rayadas para mejor lectura -->
-        <table class="table table-dark table-striped">
+        <table class="table table-dark table-striped" id="tabla1">
             <!-- Fila de encabezado + columna lateral ISP20 que ocupa toda la altura de la tabla -->
             <tbody>
                 <tr>
@@ -59,7 +62,10 @@
                 <tr><td>Maria Jose</td><td><a class="link-light" href="https://majosj-png.github.io/Ingenieria2/" target="_blank">https://majosj-png.github.io/Ingenieria2/</a></td></tr>
             </tbody>
         </table>
+        <button id="btnAgregarFila">Agregar Fila</button>
     </div>
+
+    <h5>Probando el modelo de cajas</h5>
 
 </body>
 </html>
