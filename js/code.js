@@ -69,9 +69,6 @@ app.addEventListener("click", (event) => {
       throw error;
     }
 
-    app.innerHTML = `<h1>Lista de clientes</h1>`;
-    app.innerHTML+="<hr/>";
-    app.innerHTML += `<button class="btn btn-primary mb-2" id="btnAgregarCliente">Agregar cliente</button>`;
     console.log(clientes);
     let htmlTabla="<table class='table table-dark table-striped'>";
     htmlTabla += `<tr>
@@ -109,3 +106,8 @@ app.addEventListener("click", (event) => {
 };
 
 obtenerClientes();
+
+const btnGuardarCambios = document.querySelector("#GuardarCambiosButton");
+btnGuardarCambios.addEventListener("click", async () => {
+  alert("Guardar cambios");
+})
